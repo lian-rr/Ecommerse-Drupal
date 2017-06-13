@@ -1,11 +1,17 @@
 SETUP PROYECT
+---------------------
   * Create an empty database.
   * Edit the file sites/default/settings.php
   * Change the database name for the one you created.
   * Update the username and password for the database.
   * Check the latest database version in the folder db_backups.
-  * Run the command: vendor/bin/drush sql-cli < db_backups/<latest file name>.sql
+  * Run the command: 
+      vendor/bin/drush sql-cli < db_backups/<latest file name>.sql
 
+BACKUP DATABASE
+---------------------
+  * Execute the command: 
+      vendor/bin/drush sql-dump > db_backups/<new name>.sql
 
 
 CONTENTS OF THIS FILE
