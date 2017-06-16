@@ -6073,7 +6073,7 @@ a.icon-after .glyphicon {
  */
 body {
   position: relative; }
-  body.navbar-is-static-top {
+  p body.navbar-is-static-top {
     margin-top: 0; }
   body.navbar-is-fixed-top {
     margin-top: 65px; }
@@ -6110,6 +6110,9 @@ body {
     .navbar .logo {
       margin-right: 0;
       padding-left: 0; } }
+
+p header {
+  margin-bottom: 0; }
 
 /**
  * Node styling.
@@ -6302,6 +6305,36 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed {
     body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tray, body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tray > .toolbar-lining:before {
       width: 240px; }
 
+#navbar {
+  margin-bottom: 0; }
+
+#navbar {
+  margin-bottom: 0; }
+  #navbar ul li a {
+    color: #000;
+    font-size: large; }
+    #navbar ul li a i.fa {
+      font-size: x-large; }
+  #navbar ul li a:hover {
+    color: #19c4aa;
+    text-decoration: none;
+    background: none; }
+  #navbar ul li.active a {
+    text-decoration: none;
+    color: #19c4aa; }
+
+#views-bootstrap-carousel-block-1 .carousel-caption h3 {
+  font-size: 6em; }
+
+.region.region-content {
+  background: #fff;
+  padding: 2%; }
+  .region.region-content .products.views-row .views-col {
+    border: 1px solid #000; }
+
+#views-exposed-form-shop-page-1 {
+  padding: 1% 2%; }
+
 /**
  * jQuery UI autocomplete widget style overrides.
  *
@@ -6342,6 +6375,10 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed {
     .ui-autocomplete .ui-menu-item.ui-state-active, .ui-autocomplete .ui-menu-item.ui-state-focus {
       background: #337ab7;
       color: #fff; }
+
+body {
+  background: #d6d6d6;
+  color: #000; }
 
 ol, ul {
   padding-left: 1.5em; }
