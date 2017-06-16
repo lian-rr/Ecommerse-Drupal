@@ -1,4 +1,8 @@
 // @todo these should be their own CSS files and only included when
+
+//Variables
+@import "variables";
+
 // specific Drupal libraries are used.
 @import "component/alert";
 @import "component/ajax";
@@ -15,8 +19,19 @@
 @import "component/tabs";
 @import "component/toolbar";
 
+@import "component/header";
+@import "component/navigation";
+@import "component/carousel";
+@import "component/content";
+
+
 // jQuery UI style overrides.
 @import "jquery-ui/autocomplete";
+
+body{
+  background: $ligthcolor-complement;
+  color: $darkcolor;
+}
 
 ol, ul {
   padding-left: 1.5em;

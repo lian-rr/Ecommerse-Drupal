@@ -1,0 +1,25 @@
+#navbar{
+  margin-bottom: 0;
+  ul {
+    li {
+      a {
+        color: $darkcolor;
+        font-size: large;
+        i.fa {
+          font-size: x-large;
+        }
+      }
+      a:hover {
+        color: $primarycolor;
+        text-decoration: none;
+        background: none;
+      }
+    }
+    li.active {
+      a {
+        text-decoration: none;
+        color: $primarycolor;
+      }
+    }
+  }
+}
