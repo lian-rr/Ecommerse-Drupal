@@ -24,5 +24,4 @@ return array(
     'Dflydev\\DotAccessData' => array($vendorDir . '/dflydev/dot-access-data/src'),
     'Dflydev\\DotAccessConfiguration' => array($vendorDir . '/dflydev/dot-access-configuration/src'),
     'Consolidation' => array($vendorDir . '/drush/drush/lib'),
-    'Asm89\\Stack' => array($vendorDir . '/asm89/stack-cors/src'),
 );
