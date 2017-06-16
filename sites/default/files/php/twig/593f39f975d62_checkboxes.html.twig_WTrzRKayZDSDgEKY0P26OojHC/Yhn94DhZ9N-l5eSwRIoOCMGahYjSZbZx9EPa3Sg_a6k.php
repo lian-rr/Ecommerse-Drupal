@@ -1,7 +1,7 @@
 <?php
 
-/* core/themes/classy/templates/form/dropbutton-wrapper.html.twig */
-class __TwigTemplate_691a60898669eb9f886b94397eeacb5b4346d9020a41ea34ba0c54a7da1bd828 extends Twig_Template
+/* core/themes/classy/templates/form/checkboxes.html.twig */
+class __TwigTemplate_7b84e12d847aef702f2b3cdc74883567c6237772232475d40369b715daa8e34d extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -15,13 +15,13 @@ class __TwigTemplate_691a60898669eb9f886b94397eeacb5b4346d9020a41ea34ba0c54a7da1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("if" => 12, "spaceless" => 13);
+        $tags = array();
         $filters = array();
         $functions = array();
 
         try {
             $this->env->getExtension('sandbox')->checkSecurity(
-                array('if', 'spaceless'),
+                array(),
                 array(),
                 array()
             );
@@ -39,28 +39,18 @@ class __TwigTemplate_691a60898669eb9f886b94397eeacb5b4346d9020a41ea34ba0c54a7da1
             throw $e;
         }
 
-        // line 12
-        if ((isset($context["children"]) ? $context["children"] : null)) {
-            // line 13
-            echo "  ";
-            ob_start();
-            // line 14
-            echo "    <div class=\"dropbutton-wrapper\">
-      <div class=\"dropbutton-widget\">
-        ";
-            // line 16
-            echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["children"]) ? $context["children"] : null), "html", null, true));
-            echo "
-      </div>
-    </div>
-  ";
-            echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
-        }
+        // line 15
+        echo "<div";
+        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["attributes"]) ? $context["attributes"] : null), "addClass", array(0 => "form-checkboxes"), "method"), "html", null, true));
+        echo ">";
+        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["children"]) ? $context["children"] : null), "html", null, true));
+        echo "</div>
+";
     }
 
     public function getTemplateName()
     {
-        return "core/themes/classy/templates/form/dropbutton-wrapper.html.twig";
+        return "core/themes/classy/templates/form/checkboxes.html.twig";
     }
 
     public function isTraitable()
@@ -70,7 +60,7 @@ class __TwigTemplate_691a60898669eb9f886b94397eeacb5b4346d9020a41ea34ba0c54a7da1
 
     public function getDebugInfo()
     {
-        return array (  52 => 16,  48 => 14,  45 => 13,  43 => 12,);
+        return array (  43 => 15,);
     }
 
     public function getSource()
@@ -78,23 +68,18 @@ class __TwigTemplate_691a60898669eb9f886b94397eeacb5b4346d9020a41ea34ba0c54a7da1
         return "{#
 /**
  * @file
- * Theme override for a dropbutton wrapper.
+ * Theme override for a 'checkboxes' #type form element.
  *
- * Available variables:
- * - children: Contains the child elements of the dropbutton menu.
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The rendered checkboxes.
  *
- * @see template_preprocess()
+ * @see template_preprocess_checkboxes()
  */
+ @todo: remove this file once https://www.drupal.org/node/1819284 is resolved.
+ This is identical to core/modules/system/templates/container.html.twig
 #}
-{% if children %}
-  {% spaceless %}
-    <div class=\"dropbutton-wrapper\">
-      <div class=\"dropbutton-widget\">
-        {{ children }}
-      </div>
-    </div>
-  {% endspaceless %}
-{% endif %}
+<div{{ attributes.addClass('form-checkboxes') }}>{{ children }}</div>
 ";
     }
 }

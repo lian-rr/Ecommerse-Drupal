@@ -6323,8 +6323,17 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed {
     text-decoration: none;
     color: #19c4aa; }
 
+#views-bootstrap-carousel-block-1 .carousel-caption h3 {
+  font-size: 6em; }
+
 .region.region-content {
-  background: #fff; }
+  background: #fff;
+  padding: 2%; }
+  .region.region-content .products.views-row .views-col {
+    border: 1px solid #000; }
+
+#views-exposed-form-shop-page-1 {
+  padding: 1% 2%; }
 
 /**
  * jQuery UI autocomplete widget style overrides.

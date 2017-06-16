@@ -1,8 +1,10 @@
-.main-container{
-
-}
-
-
 .region.region-content{
   background: $ligthcolor;
+  padding: 2%;
+
+  .products.views-row{
+    .views-col{
+      border: 1px solid $darkcolor;
+    }
+  }
 }
